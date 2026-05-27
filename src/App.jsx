@@ -877,7 +877,7 @@ const CustomTooltip = ({ active, payload }) => {
           </div>
           <div className="flex items-center justify-between gap-4">
             <span className="text-accent-gold">Exit Score:</span>
-            <span className="font-bold text-[#2C5F5D]">{data.score}</span>
+            <span className="font-bold text-[#C9A84C]">{data.score}</span>
           </div>
         </div>
       </div>
@@ -927,7 +927,7 @@ const CustomExitScoreDot = (props) => {
     return (
       <g key={`exit-score-dot-${index}`}>
         {/* Pulsing glow ring using SMIL animation */}
-        <circle cx={cx} cy={cy} fill="#2C5F5D">
+        <circle cx={cx} cy={cy} fill="#C9A84C">
           <animate
             attributeName="r"
             values="4;15;4"
@@ -947,7 +947,7 @@ const CustomExitScoreDot = (props) => {
           cy={cy} 
           r={5.5} 
           fill="none" 
-          stroke="#2C5F5D" 
+          stroke="#C9A84C" 
           strokeWidth={2}
           style={{ filter: 'drop-shadow(0 0 4px rgba(201, 168, 76, 0.6))' }}
         />
@@ -957,7 +957,7 @@ const CustomExitScoreDot = (props) => {
           cy={cy} 
           r={3} 
           fill="#FFFFFF" 
-          stroke="#2C5F5D"
+          stroke="#C9A84C"
           strokeWidth={1}
         />
       </g>
@@ -970,7 +970,7 @@ const CustomExitScoreDot = (props) => {
       cx={cx} 
       cy={cy} 
       r={4} 
-      stroke="#2C5F5D" 
+      stroke="#C9A84C" 
       strokeWidth={1.5} 
       fill="#FFFFFF" 
     />
@@ -1499,7 +1499,7 @@ Generate a structured exit timing and channel recommendation.`;
     const COLOR_TEXT_LIGHT = 'FFFFFF';
     const COLOR_TEXT_DARK = '111111';
     const COLOR_TEXT_MUTED = '767676';
-    const COLOR_GOLD = '2C5F5D';
+    const COLOR_GOLD = 'C9A84C';
     const COLOR_BORDER = 'E5E5E5';
     const COLOR_RED = 'EF4444';
     const COLOR_GREEN = '10B981';
@@ -2141,23 +2141,14 @@ Generate a structured exit timing and channel recommendation.`;
           }}
         >
           <div className="flex-1 flex flex-col items-center justify-center max-w-xl w-full text-center gap-6">
-            {/* Conditor Capital Visual Identity */}
-            <div className="bg-[#0A0A0A] px-10 py-6 rounded-[12px] border border-[#2C5F5D]/30 flex flex-col items-center max-w-[280px] w-full gap-1 shadow-lg select-none mb-1">
-              <span className="text-[8px] tracking-[6px] uppercase font-bold text-white/60">THE</span>
-              <span className="text-3xl font-serif text-white tracking-wide font-light italic">Conditor</span>
-              <div className="flex items-center w-full gap-2 text-white/80 mt-1">
-                <div className="h-[1px] flex-1 bg-white/20"></div>
-                <span className="text-[9px] tracking-[6px] uppercase font-bold whitespace-nowrap">Capital</span>
-                <div className="h-[1px] flex-1 bg-white/20"></div>
-              </div>
+            <div className="text-[#111111] text-center font-bold tracking-tight animate-fadeIn" style={{ fontSize: '48px', fontWeight: 700 }}>
+              ExitIQ
             </div>
-            <div className="text-[#2C5F5D] uppercase tracking-[3px] font-bold text-center" style={{ fontSize: '13px' }}>
-              ExitIQ Platform
-            </div>
+            <div className="w-[120px] h-[2px] bg-accent-gold mx-auto"></div>
             <p className="text-[#444444] text-center" style={{ fontSize: '16px', fontWeight: 300, maxWidth: '600px', lineHeight: '1.8', opacity: 0.85 }}>
               AI-powered exit intelligence that tells private equity investors exactly when to exit, who to sell to, and which portfolio companies are at risk of AI disruption destroying their value before they can.
             </p>
-            <p className="text-[#2C5F5D] text-center" style={{ fontSize: '12px', letterSpacing: '2px', marginTop: '32px', textTransform: 'uppercase' }}>
+            <p className="text-[#C9A84C] text-center" style={{ fontSize: '12px', letterSpacing: '2px', marginTop: '32px', textTransform: 'uppercase' }}>
               Conditor Capital — Confidential
             </p>
             
@@ -2167,7 +2158,7 @@ Generate a structured exit timing and channel recommendation.`;
                 placeholder="Enter your firm email"
                 value={loginEmail}
                 onChange={(e) => setLoginEmail(e.target.value)}
-                className="w-full text-[#111111] border border-[#E5E5E5] rounded-[8px] px-4 py-2.5 text-xs text-center placeholder-[#A0A0A0] focus:outline-none focus:border-[#2C5F5D] transition-colors"
+                className="w-full text-[#111111] border border-[#E5E5E5] rounded-[8px] px-4 py-2.5 text-xs text-center placeholder-[#A0A0A0] focus:outline-none focus:border-[#C9A84C] transition-colors"
                 style={{
                   backgroundColor: '#FAFAFA',
                   color: '#111111',
@@ -2178,7 +2169,7 @@ Generate a structured exit timing and channel recommendation.`;
                 type="submit"
                 className="w-full py-2.5 font-bold text-xs text-black transition-colors cursor-pointer text-center hover:bg-[#B8973B]"
                 style={{
-                  backgroundColor: '#2C5F5D',
+                  backgroundColor: '#C9A84C',
                   color: '#000000',
                   borderRadius: '8px'
                 }}
@@ -2211,7 +2202,7 @@ Generate a structured exit timing and channel recommendation.`;
           {/* Navigation Items */}
           <nav className={`flex flex-col gap-1.5 transition-all duration-300 ${
             isTourActive && tourStep === 1 
-              ? 'ring-2 ring-[#4A9E9B] ring-offset-2 ring-offset-sidebar-bg rounded-lg shadow-[0_0_15px_rgba(74,158,155,0.6)] animate-pulse' 
+              ? 'ring-2 ring-accent-gold ring-offset-2 ring-offset-sidebar-bg rounded-lg shadow-[0_0_15px_rgba(201,168,76,0.6)] animate-pulse' 
               : ''
           }`}>
             {navigationItems.map((item) => {
@@ -2223,7 +2214,7 @@ Generate a structured exit timing and channel recommendation.`;
                   onClick={() => setActiveTab(item.id)}
                   className={`sidebar-nav-btn flex items-center justify-between w-full px-4 py-3 text-left transition-all duration-200 cursor-pointer ${
                     isActive 
-                      ? 'active text-[#4A9E9B] font-semibold' 
+                      ? 'active text-[#C9A84C] font-semibold' 
                       : 'text-[#A0A0A0]'
                   }`}
                 >
@@ -2237,7 +2228,7 @@ Generate a structured exit timing and channel recommendation.`;
                   
                   {/* Gold Dot Badge for Exit Signals */}
                   {item.badge && (
-                    <div className="w-2 h-2 rounded-full bg-[#4A9E9B] shadow-[0_0_8px_rgba(74,158,155,0.6)]" />
+                    <div className="w-2 h-2 rounded-full bg-[#C9A84C] shadow-[0_0_8px_rgba(201,168,76,0.6)]" />
                   )}
                 </button>
               );
@@ -2246,7 +2237,7 @@ Generate a structured exit timing and channel recommendation.`;
           
           {/* Centered Thin Gold Line Divider */}
           <div className="w-full flex justify-center mt-6">
-            <div className="h-[1px] w-[60%] bg-[#4A9E9B]/40" />
+            <div className="h-[1px] w-[60%] bg-[#C9A84C]/40" />
           </div>
         </div>
 
@@ -2418,7 +2409,7 @@ Generate a structured exit timing and channel recommendation.`;
                             color = '#EF4444';
                             size = 13;
                           } else if (payload.risk === 'Medium') {
-                            color = '#2C5F5D';
+                            color = '#C9A84C';
                             size = 10;
                           }
                           
@@ -2472,7 +2463,7 @@ Generate a structured exit timing and channel recommendation.`;
                     <span>High AI Risk (Urgent Action Required)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="w-3 h-3 rounded-full bg-[#2C5F5D] border-2 border-white shadow-sm" />
+                    <span className="w-3 h-3 rounded-full bg-[#C9A84C] border-2 border-white shadow-sm" />
                     <span>Medium AI Risk (Monitor closely)</span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -2723,7 +2714,7 @@ Generate a structured exit timing and channel recommendation.`;
                         // Status Badge styling
                         let statusClass = 'text-[#111111] bg-[#F9F9F9] border-border-color';
                         if (row.status === 'Exit Prep') {
-                          statusClass = 'text-accent-gold bg-[#2C5F5D]/5 border-[#2C5F5D]/25';
+                          statusClass = 'text-accent-gold bg-[#C9A84C]/5 border-[#C9A84C]/25';
                         } else if (row.status === 'Under Intent') {
                           statusClass = 'text-blue-600 bg-blue-50 border-blue-100';
                         }
@@ -2872,7 +2863,7 @@ Generate a structured exit timing and channel recommendation.`;
                       <div className="flex justify-end mt-2">
                         <button 
                           onClick={() => handleViewFullAnalysis(card)}
-                          className="flex items-center gap-1.5 px-4 py-2 bg-sidebar-bg hover:bg-accent-gold text-white hover:text-black font-bold text-xs rounded-full border border-[#2C5F5D]/25 hover:border-black transition-all duration-300 shadow-sm cursor-pointer"
+                          className="flex items-center gap-1.5 px-4 py-2 bg-sidebar-bg hover:bg-accent-gold text-white hover:text-black font-bold text-xs rounded-full border border-[#C9A84C]/25 hover:border-black transition-all duration-300 shadow-sm cursor-pointer"
                         >
                           <span>View Full Analysis</span>
                           <Sparkles size={11} />
@@ -2956,7 +2947,7 @@ Generate a structured exit timing and channel recommendation.`;
                       Based on AI disruption scoring
                     </span>
                   </div>
-                  <div className="p-3 bg-[#2C5F5D]/10 rounded-xl text-accent-gold border border-[#2C5F5D]/20">
+                  <div className="p-3 bg-[#C9A84C]/10 rounded-xl text-accent-gold border border-[#C9A84C]/20">
                     <Calendar size={22} />
                   </div>
                 </div>
@@ -3012,10 +3003,10 @@ Generate a structured exit timing and channel recommendation.`;
                         type="monotone" 
                         name="Exit Score" 
                         dataKey="score" 
-                        stroke="#2C5F5D" 
+                        stroke="#C9A84C" 
                         strokeWidth={2}
                         dot={<CustomExitScoreDot />}
-                        activeDot={{ r: 6, strokeWidth: 0, fill: '#2C5F5D' }}
+                        activeDot={{ r: 6, strokeWidth: 0, fill: '#C9A84C' }}
                         isAnimationActive={true}
                         animationDuration={1200}
                         animationEasing="ease-in-out"
@@ -3338,7 +3329,7 @@ Generate a structured exit timing and channel recommendation.`;
                           onClick={() => setRecommenderForm(prev => ({ ...prev, [risk.key]: !prev[risk.key] }))}
                           className={`border rounded-xl p-4 flex gap-3 transition-all cursor-pointer select-none text-left ${
                             recommenderForm[risk.key]
-                              ? 'bg-[#2C5F5D]/5 border-accent-gold shadow-[0_0_8px_rgba(201,168,76,0.15)]'
+                              ? 'bg-[#C9A84C]/5 border-accent-gold shadow-[0_0_8px_rgba(201,168,76,0.15)]'
                               : 'bg-white border-border-color hover:border-[#B5B5B5]'
                           }`}
                         >
@@ -3394,7 +3385,7 @@ Generate a structured exit timing and channel recommendation.`;
                     </div>
                     <div className="flex items-center gap-3">
                       {recommenderWarning && (
-                        <div className="bg-[#2C5F5D]/5 border border-[#2C5F5D]/25 text-accent-gold text-[10px] font-semibold px-2.5 py-1 rounded flex items-center gap-1.5">
+                        <div className="bg-[#C9A84C]/5 border border-[#C9A84C]/25 text-accent-gold text-[10px] font-semibold px-2.5 py-1 rounded flex items-center gap-1.5">
                           <span className="w-1.5 h-1.5 rounded-full bg-accent-gold animate-ping" />
                           <span>{recommenderWarning}</span>
                         </div>
@@ -3729,7 +3720,7 @@ Generate a structured exit timing and channel recommendation.`;
                       max="40" 
                       value={settingsTargetIrr} 
                       onChange={(e) => setSettingsTargetIrr(parseInt(e.target.value))} 
-                      className="w-full h-1 bg-[#E5E5E5] rounded-lg appearance-none cursor-pointer accent-[#2C5F5D]"
+                      className="w-full h-1 bg-[#E5E5E5] rounded-lg appearance-none cursor-pointer accent-[#C9A84C]"
                     />
                   </div>
 
@@ -3745,7 +3736,7 @@ Generate a structured exit timing and channel recommendation.`;
                       max="10" 
                       value={settingsMaxHoldPeriod} 
                       onChange={(e) => setSettingsMaxHoldPeriod(parseInt(e.target.value))} 
-                      className="w-full h-1 bg-[#E5E5E5] rounded-lg appearance-none cursor-pointer accent-[#2C5F5D]"
+                      className="w-full h-1 bg-[#E5E5E5] rounded-lg appearance-none cursor-pointer accent-[#C9A84C]"
                     />
                   </div>
 
@@ -3763,7 +3754,7 @@ Generate a structured exit timing and channel recommendation.`;
                             onChange={(e) => setSettingsPrefStrategic(e.target.checked)} 
                             className="sr-only peer"
                           />
-                          <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#2C5F5D]" />
+                          <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#C9A84C]" />
                         </div>
                       </label>
 
@@ -3777,7 +3768,7 @@ Generate a structured exit timing and channel recommendation.`;
                             onChange={(e) => setSettingsPrefIpo(e.target.checked)} 
                             className="sr-only peer"
                           />
-                          <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#2C5F5D]" />
+                          <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#C9A84C]" />
                         </div>
                       </label>
 
@@ -3791,7 +3782,7 @@ Generate a structured exit timing and channel recommendation.`;
                             onChange={(e) => setSettingsPrefSponsor(e.target.checked)} 
                             className="sr-only peer"
                           />
-                          <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#2C5F5D]" />
+                          <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#C9A84C]" />
                         </div>
                       </label>
                     </div>
@@ -3836,7 +3827,7 @@ Generate a structured exit timing and channel recommendation.`;
                         onChange={(e) => setSettingsEnableClaude(e.target.checked)} 
                         className="sr-only peer"
                       />
-                      <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#2C5F5D]" />
+                      <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#C9A84C]" />
                     </div>
                   </label>
 
@@ -3853,7 +3844,7 @@ Generate a structured exit timing and channel recommendation.`;
                         onChange={(e) => setSettingsLiveNews(e.target.checked)} 
                         className="sr-only peer"
                       />
-                      <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#2C5F5D]" />
+                      <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#C9A84C]" />
                     </div>
                   </label>
 
@@ -3870,7 +3861,7 @@ Generate a structured exit timing and channel recommendation.`;
                         onChange={(e) => setSettingsEmailAlerts(e.target.checked)} 
                         className="sr-only peer"
                       />
-                      <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#2C5F5D]" />
+                      <div className="w-9 h-5 bg-[#E5E5E5] rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#C9A84C]" />
                     </div>
                   </label>
 
@@ -3904,9 +3895,9 @@ Generate a structured exit timing and channel recommendation.`;
               </div>
 
               {/* SECTION 4 — About ExitIQ */}
-              <div className="bg-[#0A0A0A] rounded-[12px] p-8 flex flex-col gap-6 text-white border border-[#2C5F5D]/20 shadow-xl">
+              <div className="bg-[#0A0A0A] rounded-[12px] p-8 flex flex-col gap-6 text-white border border-[#C9A84C]/20 shadow-xl">
                 <div className="flex flex-col gap-1">
-                  <span className="section-label" style={{ color: '#2C5F5D' }}>Section 4</span>
+                  <span className="section-label" style={{ color: '#C9A84C' }}>Section 4</span>
                   <h3 className="section-heading" style={{ color: '#FFFFFF' }}>ExitIQ v1.0</h3>
                   <p className="text-white/80 text-xs font-light">AI-powered exit intelligence for private equity investors</p>
                 </div>
@@ -3918,7 +3909,7 @@ Generate a structured exit timing and channel recommendation.`;
                   <span className="px-3 py-1.5 bg-white/10 rounded-full text-white text-[10px] font-semibold tracking-wider uppercase border border-white/5">
                     Real-time Signals
                   </span>
-                  <span className="px-3 py-1.5 bg-accent-gold/10 rounded-full text-accent-gold text-[10px] font-semibold tracking-wider uppercase border border-[#2C5F5D]/20">
+                  <span className="px-3 py-1.5 bg-accent-gold/10 rounded-full text-accent-gold text-[10px] font-semibold tracking-wider uppercase border border-[#C9A84C]/20">
                     Claude Powered
                   </span>
                 </div>
@@ -4007,7 +3998,7 @@ Generate a structured exit timing and channel recommendation.`;
               
               {/* Alert Warning if Mocking */}
               {apiWarning && (
-                <div className="bg-[#2C5F5D]/5 border border-[#2C5F5D]/25 text-accent-gold text-[10px] font-semibold px-3 py-2 rounded-lg flex items-center gap-2">
+                <div className="bg-[#C9A84C]/5 border border-[#C9A84C]/25 text-accent-gold text-[10px] font-semibold px-3 py-2 rounded-lg flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-accent-gold animate-ping" />
                   <span>{apiWarning}</span>
                 </div>

@@ -59,23 +59,23 @@ aside {
 }
 
 .sidebar-nav-btn:hover {
-  border-left: 3px solid #4A9E9B !important;
-  color: #4A9E9B !important;
+  border-left: 3px solid #C9A84C !important;
+  color: #C9A84C !important;
   background-color: rgba(255, 255, 255, 0.02) !important;
 }
 
 .sidebar-nav-btn:hover svg {
-  color: #4A9E9B !important;
+  color: #C9A84C !important;
 }
 
 .sidebar-nav-btn.active {
   background-color: #1A1A1A !important;
-  border-left: 3px solid #4A9E9B !important;
-  color: #4A9E9B !important;
+  border-left: 3px solid #C9A84C !important;
+  color: #C9A84C !important;
 }
 
 .sidebar-nav-btn.active svg {
-  color: #4A9E9B !important;
+  color: #C9A84C !important;
 }
 
 /* 3. CARD UPGRADES */
@@ -109,7 +109,7 @@ aside {
 
 /* Metric card gold top border accent */
 .metric-card {
-  border-top: 2px solid #2C5F5D !important;
+  border-top: 2px solid #C9A84C !important;
 }
 
 /* Alert cards top border accents */
@@ -118,7 +118,7 @@ aside {
 }
 
 .alert-card-gold {
-  border-top: 4px solid #2C5F5D !important;
+  border-top: 4px solid #C9A84C !important;
 }
 
 .alert-card-green {
