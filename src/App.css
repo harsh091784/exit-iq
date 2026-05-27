@@ -1,0 +1,183 @@
+/* ==========================================================================
+   ExitIQ PE Exit Intelligence Platform - Cleaned and Upgraded CSS
+   ========================================================================== */
+
+/* 1. TYPOGRAPHY UTILITIES */
+.page-title {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.5px !important;
+  color: #111111 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.section-heading {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #111111 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.section-label {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: #A0A0A0 !important;
+  font-family: 'Inter', sans-serif !important;
+  display: inline-block !important;
+}
+
+.metric-number {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.body-text, p, td, li {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  color: #444444 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* 2. SIDEBAR UPGRADE */
+aside {
+  background: linear-gradient(to bottom, #0A0A0A, #141414) !important;
+}
+
+.sidebar-nav-btn {
+  border-left: 3px solid transparent !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease-in-out !important;
+  padding-left: 16px !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.sidebar-nav-btn:hover {
+  border-left: 3px solid #C9A84C !important;
+  color: #C9A84C !important;
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+.sidebar-nav-btn:hover svg {
+  color: #C9A84C !important;
+}
+
+.sidebar-nav-btn.active {
+  background-color: #1A1A1A !important;
+  border-left: 3px solid #C9A84C !important;
+  color: #C9A84C !important;
+}
+
+.sidebar-nav-btn.active svg {
+  color: #C9A84C !important;
+}
+
+/* 3. CARD UPGRADES */
+/* Base white card */
+.white-card {
+  background-color: #ffffff !important;
+  border: 1px solid #E5E5E5 !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease-in-out !important;
+  padding: 24px !important;
+}
+
+.white-card:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+}
+
+/* White card without internal padding (e.g. tables) */
+.white-card-no-padding {
+  background-color: #ffffff !important;
+  border: 1px solid #E5E5E5 !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease-in-out !important;
+  padding: 0px !important;
+}
+
+.white-card-no-padding:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+}
+
+/* Metric card gold top border accent */
+.metric-card {
+  border-top: 2px solid #C9A84C !important;
+}
+
+/* Alert cards top border accents */
+.alert-card-red {
+  border-top: 4px solid #EF4444 !important;
+}
+
+.alert-card-gold {
+  border-top: 4px solid #C9A84C !important;
+}
+
+.alert-card-green {
+  border-top: 4px solid #10B981 !important;
+}
+
+/* 4. TOP BAR UPGRADE */
+header.border-b {
+  border-bottom: 1px solid #F0F0F0 !important;
+}
+
+/* Slow Pulsing Dot next to Run AI Analysis */
+@keyframes slow-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.4;
+  }
+}
+
+.pulse-slow {
+  animation: slow-pulse 2s infinite ease-in-out;
+}
+
+/* 5. CHARTS */
+.chart-card-container {
+  background-color: #FAFAFA !important;
+  border: 1px solid #E5E5E5 !important;
+  border-radius: 12px !important;
+  padding: 24px !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.chart-card-container:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+}
+
+/* Recharts global wrapper bg styling */
+.recharts-wrapper {
+  background-color: #FAFAFA !important;
+}
+
+/* Custom tooltips */
+.custom-chart-tooltip {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+  border: none !important;
+  font-size: 12px !important;
+  padding: 8px 12px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 6. SPACING & GAPS */
+.section-container-vertical {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 32px !important;
+}
