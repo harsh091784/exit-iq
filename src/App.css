@@ -59,23 +59,23 @@ aside {
 }
 
 .sidebar-nav-btn:hover {
-  border-left: 3px solid #2C5F5D !important;
-  color: #2C5F5D !important;
+  border-left: 3px solid #4A9E9B !important;
+  color: #4A9E9B !important;
   background-color: rgba(255, 255, 255, 0.02) !important;
 }
 
 .sidebar-nav-btn:hover svg {
-  color: #2C5F5D !important;
+  color: #4A9E9B !important;
 }
 
 .sidebar-nav-btn.active {
   background-color: #1A1A1A !important;
-  border-left: 3px solid #2C5F5D !important;
-  color: #2C5F5D !important;
+  border-left: 3px solid #4A9E9B !important;
+  color: #4A9E9B !important;
 }
 
 .sidebar-nav-btn.active svg {
-  color: #2C5F5D !important;
+  color: #4A9E9B !important;
 }
 
 /* 3. CARD UPGRADES */

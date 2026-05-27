@@ -2211,7 +2211,7 @@ Generate a structured exit timing and channel recommendation.`;
           {/* Navigation Items */}
           <nav className={`flex flex-col gap-1.5 transition-all duration-300 ${
             isTourActive && tourStep === 1 
-              ? 'ring-2 ring-accent-gold ring-offset-2 ring-offset-sidebar-bg rounded-lg shadow-[0_0_15px_rgba(201,168,76,0.6)] animate-pulse' 
+              ? 'ring-2 ring-[#4A9E9B] ring-offset-2 ring-offset-sidebar-bg rounded-lg shadow-[0_0_15px_rgba(74,158,155,0.6)] animate-pulse' 
               : ''
           }`}>
             {navigationItems.map((item) => {
@@ -2223,7 +2223,7 @@ Generate a structured exit timing and channel recommendation.`;
                   onClick={() => setActiveTab(item.id)}
                   className={`sidebar-nav-btn flex items-center justify-between w-full px-4 py-3 text-left transition-all duration-200 cursor-pointer ${
                     isActive 
-                      ? 'active text-[#2C5F5D] font-semibold' 
+                      ? 'active text-[#4A9E9B] font-semibold' 
                       : 'text-[#A0A0A0]'
                   }`}
                 >
@@ -2237,7 +2237,7 @@ Generate a structured exit timing and channel recommendation.`;
                   
                   {/* Gold Dot Badge for Exit Signals */}
                   {item.badge && (
-                    <div className="w-2 h-2 rounded-full bg-[#2C5F5D] shadow-[0_0_8px_rgba(201,168,76,0.6)]" />
+                    <div className="w-2 h-2 rounded-full bg-[#4A9E9B] shadow-[0_0_8px_rgba(74,158,155,0.6)]" />
                   )}
                 </button>
               );
@@ -2246,7 +2246,7 @@ Generate a structured exit timing and channel recommendation.`;
           
           {/* Centered Thin Gold Line Divider */}
           <div className="w-full flex justify-center mt-6">
-            <div className="h-[1px] w-[60%] bg-[#2C5F5D]/40" />
+            <div className="h-[1px] w-[60%] bg-[#4A9E9B]/40" />
           </div>
         </div>
 
